@@ -23,24 +23,53 @@
             <div class="grid">
                 <div class="card">
                     <h3>1. Configuración</h3>
-                    <code>git config --global user.name "Tu Nombre"</code>
+                    
+                    <p>Verifica la versón de git.</p>
+                    <code>git --version</code>
+
+                    <p>Establece tu correo.</p>
+                    <code>git config --global user.email "nombredelmail@gmail.com"</code>
+
                     <p>Establece tu identidad.</p>
+                    <code>git config --global user.name "Tu Nombre"</code>
+
+
                 </div>
                 <div class="card">
                     <h3>2. Iniciar</h3>
-                    <code>git init</code>
                     <p>Crea un nuevo repositorio local.</p>
+                    <code>git init</code>
+
+                    <p>Establece la URL del repositorio remoto de trabajo.</p>
+                    <code>
+                        git remote add origin https://github.com/nombredeusuario/nombredeusuariorepositorio.git
+                    </code>
+
                 </div>
                 <div class="card">
                     <h3>3. Guardar</h3>
+
+                    <p>Prepara y guarda tus cambios. Estos cambios se guardan en el repositorio local.</p>
                     <code>git add .</code>
                     <code>git commit -m "mensaje"</code>
-                    <p>Prepara y guarda tus cambios.</p>
                 </div>
                 <div class="card">
                     <h3>4. Sincronizar</h3>
-                    <code>git push origin main</code>
                     <p>Sube tus cambios al servidor remoto.</p>
+                    <code>git push origin main</code>
+                </div>
+
+                <div class="card">
+                    <h3>5. Ramas</h3>
+                    <p>Cambia el nombre de la rama de trabajo actual.</p>
+                    <code>git branch -m main</code>
+
+                    <p>Crea una nueva rama.</p>
+                    <code>git branch nueva_rama</code>
+                    
+                    <p>Establece la rama de trabajo actual como la nueva rama.</p>
+                    <code>git checkout nueva_rama</code>
+
                 </div>
             </div>
         </section>
