@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía Básica de Git</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Git: Guía de Supervivencia</h1>
+        <p>Control de versiones para humanos.</p>
+    </header>
+
+    <main class="container">
+        <section id="que-es">
+            <h2>¿Qué es Git?</h2>
+            <p>Es un sistema de <strong>control de versiones</strong> distribuido. Permite rastrear cambios en el código, volver a versiones anteriores y trabajar en equipo sin sobrescribir el trabajo de otros.</p>
+        </section>
+
+        <section id="comandos">
+            <h2>Comandos Esenciales</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>1. Configuración</h3>
+                    <code>git config --global user.name "Tu Nombre"</code>
+                    <p>Establece tu identidad.</p>
+                </div>
+                <div class="card">
+                    <h3>2. Iniciar</h3>
+                    <code>git init</code>
+                    <p>Crea un nuevo repositorio local.</p>
+                </div>
+                <div class="card">
+                    <h3>3. Guardar</h3>
+                    <code>git add .</code>
+                    <code>git commit -m "mensaje"</code>
+                    <p>Prepara y guarda tus cambios.</p>
+                </div>
+                <div class="card">
+                    <h3>4. Sincronizar</h3>
+                    <code>git push origin main</code>
+                    <p>Sube tus cambios al servidor remoto.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
